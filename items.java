@@ -4,7 +4,6 @@ public class items {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Take list input
         System.out.print("Enter number of items: ");
         int n = sc.nextInt();
         sc.nextLine();
@@ -15,7 +14,6 @@ public class items {
             items.add(sc.nextLine());
         }
 
-        // Ask for index
         System.out.print("Enter index: ");
         int index = sc.nextInt();
 
@@ -27,4 +25,5 @@ public class items {
         }
     }
 }
+
 
