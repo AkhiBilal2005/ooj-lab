@@ -28,16 +28,16 @@ class Account2 {
 }
 
 class SavAcct extends Account2 {
-    private final double interestRate = 0.04;
+    private final double feeRate = 0.04;
 
     public SavAcct(String name, String number, double balance) {
         super(name, number, "Savings", balance);
     }
 
-    public void computeAndDepositInterest() {
-        double interest = balance * interestRate;
-        balance += interest;
-        System.out.println("Interest of ₹" + interest + " added. New balance: ₹" + balance);
+    public void computeAndtakefee() {
+        double fee = balance * feeRate;
+        balance += fee;
+        System.out.println("fee of ₹" + fee + " added. New balance: ₹" + balance);
     }
 
     public void withdraw(double amount) {
@@ -155,3 +155,4 @@ public class AccountDemo {
         sc.close();
     }
 }
+
